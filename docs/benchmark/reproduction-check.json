@@ -1,0 +1,16 @@
+{
+  "reference": "20261016T041636624217Z-c47b2dc512",
+  "fresh_environment": "20261016T072424943313Z-c47b2dc512",
+  "tolerance_USD": 0.1,
+  "maximum_absolute_difference_USD": {
+    "predictions:Last price": 0.0,
+    "predictions:Random Forest": 2.9103830456733704e-11,
+    "predictions:ARIMA": 0.0,
+    "predictions:LSTM": 0.0234375,
+    "forecasts:Last price": 0.0,
+    "forecasts:Random Forest": 1.4551915228366852e-11,
+    "forecasts:ARIMA": 0.0,
+    "forecasts:LSTM": 0.0078125
+  },
+  "passed": true
+}

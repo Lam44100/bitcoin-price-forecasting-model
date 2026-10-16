@@ -1,0 +1,2 @@
+# Optional: rebuild the captioned screenshot walkthrough locally.
+imageio-ffmpeg==0.6.0

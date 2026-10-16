@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-10-16T04:16:36.580513+00:00",
+  "experiment_key": "c47b2dc5122581b2deaf7b09c83497790351e150dcd3da1922c55aadf97debce",
+  "config": {
+    "horizon": 7,
+    "lookback": 60,
+    "seed": 42,
+    "epochs": 12,
+    "trees": 200,
+    "models": [
+      "Last price",
+      "Random Forest",
+      "ARIMA",
+      "LSTM"
+    ]
+  },
+  "data": {
+    "symbol": "BTC-USD",
+    "interval": "1d",
+    "timezone": "UTC",
+    "source": "Yahoo Finance via yfinance",
+    "fetched_at": "2026-10-16T04:14:25.661463+00:00",
+    "start": "2021-10-16T00:00:00+00:00",
+    "end": "2026-10-14T00:00:00+00:00",
+    "rows": 1825,
+    "fingerprint": "72977dc46866d33cabe3e9de59d8bf298f6e542583f5d4c8053aa45618a9516f"
+  },
+  "split": {
+    "train_end": "2025-04-14T00:00:00+00:00",
+    "validation_start": "2025-04-15T00:00:00+00:00",
+    "validation_end": "2026-01-13T00:00:00+00:00",
+    "test_start": "2026-01-14T00:00:00+00:00",
+    "test_end": "2026-10-14T00:00:00+00:00",
+    "validation_origins": 39,
+    "test_origins": 39,
+    "unused_test_tail_days": 1
+  },
+  "selection_metric": "Mean absolute error across validation origins and horizons",
+  "protocol": "70/15/15 chronological; non-overlapping seven-day target blocks; fixed test parameters; full-history outlook refit",
+  "selected_parameters": {
+    "Last price": {},
+    "Random Forest": {
+      "max_depth": 6
+    },
+    "ARIMA": {
+      "order": [
+        0,
+        1,
+        0
+      ]
+    },
+    "LSTM": {
+      "units": 64
+    }
+  },
+  "model_warnings": {
+    "Last price": {
+      "test_fit": [],
+      "final_fit": []
+    },
+    "Random Forest": {
+      "test_fit": [],
+      "final_fit": []
+    },
+    "ARIMA": {
+      "test_fit": [],
+      "final_fit": []
+    },
+    "LSTM": {
+      "test_fit": [],
+      "final_fit": []
+    }
+  },
+  "duration_seconds": 118.042,
+  "model_duration_seconds": {
+    "Last price": 0.031,
+    "Random Forest": 32.514,
+    "ARIMA": 1.442,
+    "LSTM": 83.998
+  },
+  "python": "3.11.5",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "packages": {
+    "numpy": "1.26.3",
+    "pandas": "2.2.0",
+    "scikit-learn": "1.4.0",
+    "statsmodels": "0.14.1",
+    "tensorflow": "2.15.0",
+    "streamlit": "1.31.1",
+    "yfinance": "0.2.54",
+    "plotly": "5.18.0"
+  }
+}
